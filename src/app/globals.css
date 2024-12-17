@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base Styles */
+@layer base {
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-bold text-gray-900;
+  }
+
+  a {
+    @apply transition-colors duration-300 hover:text-blue-500;
+  }
+}
+
+/* Component Styles */
+@layer components {
+  /* Header Section */
+  .header {
+    @apply bg-gray-200 border-b border-gray-300;
+  }
+
+  .nav-link {
+    @apply text-gray-700 hover:text-blue-500 transition duration-200;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    @apply bg-gray-100 py-20 text-center;
+  }
+
+  .hero-title {
+    @apply text-4xl font-bold mb-4 text-gray-800;
+  }
+
+  .hero-subtitle {
+    @apply text-gray-600 text-lg;
+  }
+
+  /* Featured Products */
+  .featured-products {
+    @apply my-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6;
+  }
+
+  .product-card {
+    @apply bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300;
+  }
+
+  /* Footer */
+  .footer {
+    @apply bg-gray-900 text-white py-10;
+  }
+
+  .footer-section {
+    @apply space-y-3;
+  }
+
+  .footer-title {
+    @apply text-lg font-semibold mb-2;
+  }
+
+  .footer-link {
+    @apply text-gray-400 hover:text-white hover:underline;
+  }
+
+  .footer-bottom {
+    @apply border-t border-gray-700 mt-8 pt-4 text-center text-gray-500 text-sm;
+  }
+}
